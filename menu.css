@@ -404,7 +404,7 @@ input[type="email"] {
 .dynamic-content strong {
     font-weight: 500; /* Met en avant les éléments importants sans trop alourdir le texte */
 }
-/* style bouton malvoyant*/
+        /* style bouton malvoyant*/
         /* Positionnement stratégique du bouton */
         #increaseFontSize {
             position: fixed;
