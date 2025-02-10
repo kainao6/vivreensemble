@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Test CORS</h1>
+    <button id="testButton">Test CORS</button>
+    <p id="response"></p>
+    
+    <script>
+        document.getElementById('testButton').addEventListener('click', () => {
+            fetch('http://localhost:500/api/users')  // Changez l'URL selon votre configuration
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('response').innerText = data;
+                })
+                .catch(error => {
+                    document.getElementById('response').innerText = 'Erreur: ' + error;
+                });
+        });
+    </script>
+</body>
+</html>

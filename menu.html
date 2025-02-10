@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="menudomaine.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div include-html="header.html"></div>
+    <!--bouton malvoyant-->
+    <button id="increaseFontSize">Agrandir le texte</button>
+
+    <div class="content">
+        <div class="image-overlay">
+            <img src="img/humani.jpeg" alt="Image d'arrière-plan">
+            <div class="text-overlay">
+                <h2>Vivre Ensemble</h2>
+                <p>Une association d'aide humanitaire qui agit sur le plan local et international...</p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Nos domaines d'intervention</h1>
+    </header>
+    <div class="container">
+        <div class="card card-left">
+            <div class="logo-section">
+                <h2>Autofinancement</h2>
+            </div>
+            <p>Pour pouvoir financer nos actions humanitaires, nous réalisons énormément d'autofinancement.</p>
+            <button onclick="window.location.href='actualite.html';">Les prochains autofinancements</button>
+        </div>
+        <div class="card card-right">
+            <div class="logo-section">
+                <h2>Action Humanitaire</h2>
+            </div>
+            <p>Découvrez Vivre Ensemble en vous projetant dans une action d'aide humanitaire.</p>
+            <button onclick="window.location.href='actualite.html';">Les prochaines aides humanitaires</button>
+        </div>
+    </div>
+    
+    <div include-html="popup.html"></div>
+    <div include-html="footer.html"></div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="include.js"></script>
+    <script src="menu.js"></script> 
+    <script src="server.js"></script> 
+    <script src="engage.js"></script>
+    <script src="malv.js"></script>
+
+</body>
+</html>

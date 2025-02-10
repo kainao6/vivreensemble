@@ -1,0 +1,83 @@
+
+
+header {
+    text-align: center;
+    background-color: #5FBFC1;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: white;
+    width: 30%;
+    margin: 0 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative; /* For the overlap */
+    z-index: 1; /* Raise above the background */
+}
+
+
+
+.logo-section img {
+    height: 50px; /* Adjust based on actual logo size */
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    color: #5FBFC1;
+}
+
+.card p {
+    color: #333;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #5FBFC1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #5FBFC1;
+}
+/* ... autres styles ... */
+
+.card-left,
+.card-right {
+    transition: transform 0.5s ease-out;
+}
+
+/* Positions initiales (hors de l'écran) */
+.card-left.start {
+    transform: translateX(-100%);
+}
+
+.card-right.start {
+    transform: translateX(100%);
+}
+
+/* Positions finales (au milieu) */
+.card-left.end,
+.card-right.end {
+    transform: translateX(0);
+}
+/*carroussel*/
+.swiper-slide img {
+    display: block;
+    margin: 0 auto; /* Cette règle centrer les images horizontalement */
+}

@@ -1,0 +1,129 @@
+.donation-options {
+    background-color: #f7f7f7;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.donation-options h2 {
+    color: #5FBFC1; /* Choisissez une couleur appropriée */
+    margin-bottom: 20px;
+}
+
+.donation-options p {
+    line-height: 1.6;
+}
+
+.donation-method {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative; /* Pour positionner le bouton '+' */
+}
+
+.donation-method h3 {
+    color: #5FBFC1;
+}
+
+.donation-method button.expand-button {
+    position: absolute;
+    top: 20px; /* Ajustez en fonction de vos besoins */
+    right: 20px; /* Ajustez en fonction de vos besoins */
+    background-color: #5FBFC1; /* Choisissez une couleur appropriée */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px; /* Ajustez la taille du bouton */
+    height: 30px; /* Ajustez la taille du bouton */
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Assurez-vous que le bouton '+' a suffisamment de contraste pour être facilement visible */
+.donation-method button.expand-button:hover {
+    background-color: #2c6c6d;
+}
+/*formulairedon*/
+.titredon{
+    color: #5FBFC1;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 70;
+    font-style: normal;
+    margin-top: -10px;
+}
+.donation-container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: -10px;
+}
+
+.donation-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.donation-options, .donation-amounts {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.donation-frequency, .amount {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donation-frequency.active, .amount:hover {
+    background-color: #5FBFC1;
+    color: white;
+    border-color: #5FBFC1;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.don-button {
+    width: 100%;
+    background-color: #e53e3e;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 33%;
+    text-decoration: none;
+}
+
+.don-button:hover {
+    background-color: #c53030;
+}
+
+.quote {
+    background-color: #5FBFC1;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.quote p {
+    text-align: center;
+}
+/*imageombre*/
+.content {
+    position: relative; /* Assurez-vous que la position est relative pour que les éléments à l'intérieur soient positionnés correctement */
+}
+
+

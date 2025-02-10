@@ -1,0 +1,67 @@
+.form-container {
+    background-color: white;
+    width: 50%;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+.form-header {
+    background-color: #5FBFC1;
+    color: white;
+    padding: 3em;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+form {
+    margin: 1em;
+}
+.form-group {
+    margin-bottom: 1em;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+.support-container {
+    background-color: #efeded; /* ou une autre couleur correspondant à votre design */
+    text-align: center;
+    padding: 40px 0;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-weight: bold;
+
+}
+ /* ou une autre couleur correspondant à votre design */
+ .support-container h2 {
+    color: #333; /* ou une autre couleur correspondant à votre design */
+    margin-bottom: 30px;
+}
+
+.support-option {
+    display: inline-block;
+    width: 15%; /* Permet de donner une largeur fixe aux conteneurs d'options */
+    vertical-align: top; /* Aligner les éléments en haut pour un rendu cohérent */
+    margin: 0 40px;
+
+}
+
+.support-option img {
+    max-width: 100%; /* Assurez-vous que l'image est réactive et s'adapte à la largeur du conteneur */
+    height: auto; /* Pour maintenir l'aspect ratio */
+    margin: 0 auto 20px; /* Centre l'image horizontalement et ajoute un espace en dessous */
+    display: block; /* Rendre l'image en tant que block pour permettre le centrage */
+}
+
+.support-option h3 {
+    color: #333; /* ou une autre couleur correspondant à votre design */
+    margin-bottom: 10px;
+}
+
+.support-option p {
+    color: #666; /* ou une autre couleur correspondant à votre design */
+}

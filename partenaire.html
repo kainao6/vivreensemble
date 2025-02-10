@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partenaire</title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div include-html="header.html"></div>
+    <!--bouton malvoyant-->
+    <button id="increaseFontSize">Agrandir le texte</button>
+
+    <div id="association-info" class="dynamic-content"></div>
+
+    <div include-html="footer.html"></div>
+    <div include-html="popup.html"></div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="menu.js"></script>
+    <script src="include.js"></script>
+    <script src="server.js"></script>
+    <script src="engage.js"></script>
+    <script src="malv.js"></script>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Contenu dynamique pour la section "Qui sommes-nous ?"
+        const associationInfo = `
+            <div class="dynamic-content">
+                <h2>Vivre Ensemble</h2>
+                <p>
+                    Située à Marly, l'association <strong>Vivre Ensemble</strong> se distingue par son engagement passionné en faveur de l'aide humanitaire, tant au niveau local qu'international. Fondée sur des valeurs de solidarité, d'entraide et de partage, elle est composée essentiellement de jeunes bénévoles animés par le désir de faire une différence dans la vie des plus démunis.
+
+Au cœur de l'action locale, Vivre Ensemble mène des initiatives concrètes telles que la distribution de vêtements, de nourriture et d'autres produits de première nécessité aux personnes en situation de précarité. Ces actions sont réalisées avec une sensibilité particulière aux besoins de la communauté locale, offrant ainsi un soutien indispensable à ceux qui en ont le plus besoin.
+
+Mais l'impact de l'association ne s'arrête pas aux frontières de Marly. Vivre Ensemble porte également son engagement au-delà des frontières, en organisant des chantiers humanitaires à l'étranger. Ces projets internationaux permettent de venir en aide à des communautés vulnérables dans différents pays, où les besoins sont souvent criants. Que ce soit pour la construction d'écoles, l'amélioration des infrastructures sanitaires ou le soutien à des projets agricoles, l'association œuvre avec la même détermination à chaque mission.
+
+Ce qui rend Vivre Ensemble unique, c'est son modèle d'autofinancement. Les jeunes bénévoles, motivés par une volonté inébranlable de changer le monde, organisent diverses activités pour collecter des fonds. De la vente de gâteaux aux événements caritatifs, chaque euro récolté est réinvesti dans les projets humanitaires de l'association. Cette autonomie financière permet à Vivre Ensemble de rester fidèle à ses valeurs et d'assurer la continuité de ses actions sans dépendre des subventions extérieures.
+
+En rejoignant Vivre Ensemble, vous soutenez une jeunesse engagée et solidaire, prête à relever les défis de l'humanitaire avec enthousiasme et persévérance. Ensemble, nous pouvons construire un monde plus juste, où chacun a sa place et où l'entraide devient une force collective. Chaque geste compte, chaque don fait la différence, et ensemble, nous pouvons accomplir de grandes choses.
+                </p>
+                
+            </div>
+        `;
+        document.getElementById("association-info").innerHTML = associationInfo;
+    });
+    </script>
+</body>
+</html>

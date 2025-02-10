@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="header">
+        <div class="social-banner">
+            <div class="logo">
+                <img src="img/logoremov.png" alt="Vivre En Logo" style="height: 120px; width: auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="login-container">
+            <h2>Connexion Administrateur</h2>
+            <form id="adminLoginForm" action="/admin_login" method="POST">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Se connecter</button>
+                <div id="loginMessage" class="message"></div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="contact-section">
+            <h2>CONTACTEZ-NOUS</h2>
+            <p>Besoin de nous contacter? Rien de plus simple !</p>
+            <button onclick="location.href='mailto:test@gmail.com';">Nous envoyer un mail</button>
+            <p>Ou nous appeler au <strong>01 42 46 36 36</strong></p>
+        </div>
+        <div class="footer-links">
+            <a href="/menu.html">Accueil</a> | 
+            <a href="/partenaire.html">À propos</a> | 
+            <a href="/contact.html">Contactez nous</a> | 
+            <a href="/engage.html">Nous rejoindre</a> | 
+            <a href="/conf.html">Politique de confidentialité</a> | 
+            <a href="/cond.html">Conditions d'utilisation</a> | 
+        </div>
+
+        <div class="legal">
+            <p>© 2024, Vivre Ensemble France est une association d'aide humanitaire.</p>
+        </div>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>

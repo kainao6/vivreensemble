@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités</title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="actualite.css">
+    <script src="https://js.stripe.com/v3/"></script> <!-- Si besoin de Stripe -->
+</head>
+<body>
+    <!--importation header-->
+    <div include-html="header.html"></div>
+    <button id="increaseFontSize">Agrandir le texte</button>
+    <div class="parte">
+        <p>Découvrez nos <span> actualité.</span></p>
+    </div> 
+        <!-- Les articles sont inclus ici -->
+        <main>
+            <div id="articles-container" class="articles-container">
+                <!-- Les articles seront injectés ici -->
+            </div>
+        </main>
+                    <!--importation popup-->
+
+        <div include-html="popup.html"></div>
+
+            <!--importation footer-->
+    <div include-html="footer.html"></div>
+        <script src="include.js"></script>
+        <script src="getarticles.js"></script>
+        <script src="malv.js"></script>
+        <script src="popup.js"></script>
+</body>
+</html>

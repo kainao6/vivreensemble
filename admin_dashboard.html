@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord Administrateur</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Menu de navigation -->
+            <a href="/logout">Voir le site</a>
+        </nav>
+        <div class="header">
+            <div class="social-banner">
+                <div class="logo">
+                    <img src="img/logoremov.png" alt="Vivre En Logo" style="height: 120px; width: auto;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Tableau de Bord Administrateur</h1>
+        <button onclick="showAddArticleForm()">Ajouter un nouvel article</button>
+        <div id="articles-container" class="articles-container">
+            <!--article transmis ici -->
+        </div>
+
+        <!-- Formulaire pour ajouter/modifier un article -->
+        <div id="articleForm" style="display:none;">
+            <h2 id="formTitle">Ajouter un article</h2>
+            <form id="articleForm" action="#" method="POST">
+                <input type="hidden" id="articleId" name="id">
+                <div class="form-group">
+                    <label for="title">Titre</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Contenu</label>
+                    <textarea id="content" name="content" rows="10" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image (URL)</label>
+                    <input type="text" id="image" name="image">
+                </div>
+                <button type="submit" id="submitArticle">Enregistrer</button>
+                <button type="button" onclick="hideArticleForm()">Annuler</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contact-section">
+            <h2>CONTACTEZ-NOUS</h2>
+            <p>Besoin de nous contacter? Rien de plus simple !</p>
+            <button onclick="location.href='mailto:test@gmail.com';">Nous envoyer un mail</button>
+            <p>Ou nous appeler au <strong>01 42 46 36 36</strong></p>
+        </div>
+        <div class="footer-links">
+            <a href="/menu.html">Accueil</a> | 
+            <a href="/partenaire.html">À propos</a> | 
+            <a href="/contact.html">Contactez nous</a> | 
+            <a href="/engage.html">Nous rejoindre</a> | 
+            <a href="/conf.html">Politique de confidentialité</a> | 
+            <a href="/cond.html">Conditions d'utilisation</a> | 
+        </div>
+
+        <div class="legal">
+            <p>© 2024, Vivre Ensemble France est une association d'aide humanitaire.</p>
+        </div>
+    </footer>
+<script src="article.js"></script>
+</body>
+</html>

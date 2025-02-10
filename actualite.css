@@ -1,0 +1,121 @@
+.articles-container {
+    display: flex;
+    flex-wrap: wrap; /* Assurer que les articles passent à la ligne suivante s'il n'y a pas assez d'espace */
+    justify-content: space-between; /* Cela séparera uniformément les articles */
+    margin: 20px;
+}
+
+.article {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: calc(30.333% - 26.666px); /* ajustez cette valeur pour tenir compte des marges */
+    margin-bottom: 20px; /* Espacement entre les lignes */
+    text-align: center;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto; /* pour garder le rapport hauteur/largeur */
+    border-radius: 5px;
+    margin-bottom: 15px; /* Espacement entre l'image et le titre */
+}
+
+
+.article h3 {
+    color: #5b5b5b;
+    margin: 10px 0;
+}
+
+.date {
+    color: #a0a0a0;
+    font-size: 0.9em;
+}
+
+.article p {
+    color: #6c6c6c;
+    line-height: 1.6;
+}
+
+.article button {
+    background-color: #5FBFC1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+    border-radius: 20px;
+}
+
+.article button:hover {
+    background-color:#207c7e;
+}
+
+/* ...Autres styles... */
+/* ... (vos autres styles) ... */
+
+.pagination-container {
+    background-color: white; /* Couleur de fond similaire à celle de votre image */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination {
+    display: inline-flex;
+    gap: 10px; /* Espace entre les éléments de pagination */
+    margin-left: 40%; /* Ajustez en fonction de votre mise en page */
+   
+}
+
+.pagination a {
+    color: #5FBFC1; /* Couleur du texte pour les liens */
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent; /* Préparer la bordure pour le hover */
+   
+}
+
+.pagination a:hover {
+    border: 2px solid #5FBFC1; /* Bordure blanche lors du survol */
+    border-radius: 3px; /* Coins arrondis pour la bordure */
+}
+
+.pagination .next {
+    font-size: larger;
+    padding: 5px 12px; /* Ajustez l'espacement autour de la flèche */
+}
+
+.archive-button {
+    background-color: transparent; /* Bouton transparent */
+    border: 2px solid #5FBFC1; /* Bordure blanche */
+    color: #5FBFC1; /* Texte blanc */
+    padding: 10px 20px;
+    margin-right: 30px; /* Ajustez en fonction de votre mise en page */
+    cursor: pointer; /* Le curseur indique un élément cliquable */
+}
+
+.archive-button:hover {
+    background-color: #5FBFC1; /* Changement de fond au survol */
+    color: white; /* Texte prend la couleur de fond de la pagination */
+    border-color: #5FBFC1; /* Gardez la bordure blanche au survol */
+}
+/* bouton retour article*/
+.button-retour {
+    background-color: #5FBFC1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.button-retour:hover {
+    background-color: #207c7e;
+}
+
+/* ... (vos autres styles) ... */

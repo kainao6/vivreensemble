@@ -1,0 +1,32 @@
+<footer class="footer">
+    <div class="contact-section">
+        <h2>CONTACTEZ-NOUS</h2>
+        <p>Besoin de nous contacter? Rien de plus simple !</p>
+        <button onclick="location.href='mailto:test@gmail.com';">Nous envoyer un mail</button>
+        <p>Ou nous appeler au <strong>01 42 46 36 36</strong></p>
+    </div>
+    <div class="newsletter-section">
+        <h2>INSCRIVEZ-VOUS À NOTRE NEWSLETTER</h2>
+        <p>Recevez nos actualités directement par e-mail</p>
+        <form id="subscribeForm" action="/subscribe" method="POST">
+            <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+            <button type="submit">S'inscrire</button>
+        </form>        
+        <div id="footerMessage" class="message"></div>
+    </div>
+    <div class="footer-links">
+        <a href="/menu.html">Accueil</a> | 
+        <a href="/partenaire.html">À propos</a> | 
+        <a href="/contact.html">Contactez nous</a> | 
+        <a href="/engage.html">Nous rejoindre</a> | 
+        <a href="/conf.html">Politique de confidentialité</a> | 
+        <a href="/cond.html">Conditions d'utilisation</a> | 
+        <!--lien pour connexion admin-->
+        <a href="/admin_login.html">Je suis admin</a>
+
+    </div>
+    <div class="legal">
+        <p>© 2024, Vivre Ensemble France est une association d'aide humanitaire.</p>
+    </div>
+
+</footer>

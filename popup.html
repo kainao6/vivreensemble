@@ -1,0 +1,14 @@
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <!-- Croix pour fermer le popup -->
+        <span id="closePopup" class="close">&times;</span>
+        <h2 class="popup-title">Abonnez-vous à notre newsletter</h2>
+        <form id="popupSubscribeForm" action="/subscribe" method="POST">
+            <div class="input-container">
+                <input type="email" name="email" placeholder="Votre email" id="emailInput" required>
+            </div>
+            <button type="submit" class="submit-btn">S'abonner</button>
+        </form>
+        <div id="popupMessage" class="message"></div>
+    </div>
+</div>

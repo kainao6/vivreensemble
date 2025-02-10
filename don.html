@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire un don</title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="don.css">
+</head>
+<body>
+    <!--importation header-->
+    <div include-html="header.html"></div>
+    <!--bouton malvoyant-->
+    <button id="increaseFontSize">Agrandir le texte</button>
+
+    <div class="content">
+        <div class="image-overlay">
+            <img src="img/humani.jpeg" alt="Image d'arrière-plan">
+            <div class="text-overlay">
+                <div class="titredon">
+                    <h2>Faire un don</h2>
+                </div> 
+                <div class="donation-container">
+                    <h2>Vous pourrez choisir le montant du don en suivant les instructions :</h2><br><br>                      
+                    <a href="https://www.paypal.com/ncp/payment/BF23PMWPPP26L" class="don-button">FAIRE UN DON</a> <br>
+                    <div class="quote">
+                        <p>Vos informations de paiement ne sont pas enregistrées, les paiements sont traités uniquement par Paypal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="donation-options">
+        <h2>D'autres moyens de donner avec déduction fiscale</h2>
+        <p>Les dons que vous réalisez auprès de Vivre Ensemble ouvrent droit à un avantage fiscal conséquent...</p>
+        <div class="donation-method">
+            <h3>Virement bancaire</h3>
+            <p>Pour tout virement bancaire, veuillez contacter l'équipe Vivre Ensemble au 01 42 46 36 36.</p>
+            <button class="expand-button">+</button>
+        </div>
+        <div class="donation-method">
+            <h3>Chèque</h3>
+            <p>Faire un don par chèque à VIVRE ENSEMBLE Marly.</p>
+            <button class="expand-button">+</button>
+        </div>
+    </div>
+    <div include-html="footer.html"></div>
+    <div include-html="popup.html"></div>
+
+    <script src="include.js"></script>
+    <script src="selectdon.js"></script>
+    <script src="server.js"></script>
+    <script src="engage.js"></script>
+    <script src="menu.js"></script>
+    <script src="malv.js"></script>
+</body>
+</html>
